@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi pagina web delfi</title>
+    <meta charset="UTF-8">
+     <!--UTF 8 Es para que el navegador pueda interpretar un juego de carateres dado, en este caso los del español como la ñ o tildes  -->
+     <meta name="author" content="Delfina Massa">
+     <meta name="description" content="primer practica de html">
+     <meta name="keywords" content="html, css, desarrollo">
+     <!-- esto sirve para que el navegador identifique nuestra paginas con estas palabras y la arroje cuando un usuario las busque -->
+     <link rel= "stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <!-- <a href="http://www.clubandino.org/" target="_blank">Elemntos</a> -->
+            <a href="elementos.html">Elementos</a>
+            <a href="error404.html">Contacto</a>
+            <!-- target blank permite que abra el hipervinculo en otra pestaña, hay otros targets -->
+        </nav>
+        <div id="titulos">
+            <h1>Título de mi web</h1>
+            <h2>Subtítulo</h2>
+        </div>
+        <!-- h  es para los titulos u cuando aumenta el numero disminuye el tamaño-->
+        
+        
+    </header>
+    <div>
+        <img src="imagenes/error404.jpg" alt="no se puede cargar imagen">
+    </div>
+    <div id="caja"></div>
+    <div class="grupo">
+        <p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+    </div>
+    <div class="ancestro">
+        <div class="grupo borde"></div>
+    <!-- si hago espacio y agrego otra clase, esta se anida denttro de la anterior -->
+    </div>
+    
+    <div class="grupo caja3"></div>
+    <div id="whatsapp">
+        <img src="imagenes/whatsapp-logo-icone-1.png">
+     </div>
+    <footer>
+        <p>&copy;Todos los derechos reservados. Rolling Code School</p>
+        <!-- &copy; es para el loguito de copyright -->
+    </footer>
+    
+</body>
+</html>

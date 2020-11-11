@@ -1,0 +1,185 @@
+/*esto es un comentario en stylesheet*/
+/* selector universal */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* tambien se abre con control y llave cuadrada que cierra, selector de etiqueta es h1 */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* selector de etiqueta */
+h1{
+    color: lightgreen;
+    padding: 10px;
+}
+h2{
+    padding: 10px;
+}
+
+/* selector de id para diferenciar cual de todos los divs quiero trabajar */
+#titulos{
+    padding: 20px;
+    text-align: center;
+    color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 58px;
+    font-family: 'Poppins', sans-serif;  
+}
+/* Titulos */
+h2,h3,h4,h5,h6{
+    margin: 15px;
+    color: orangered;
+}
+header h1{
+    color: yellowgreen;
+}
+header h2{
+    color: limegreen;
+}
+
+/* error404 */
+#caja{
+    width: 100px;
+    height: 100px;
+    background-color: #62A0BA;
+    /* aqui hay un color hexadecimal cuyo nombre encontre en una paleta hexadec que encontre en google */
+}
+#parrafo{
+    color:blue;
+    border: 4px;
+    padding: 10px;
+}
+/* selector de clase, llamo a todos los divs de la class grupo y se modifican por igual */
+.grupo{
+    width: 150px;
+    height: 150px;
+    background-color: mediumseagreen;
+    border: 3px solid darkblue ;
+    margin: 20px;
+}
+.borde{
+    width: 300px!important;
+    /* important sirve para definir prioridad, por ej, a las cajas le di primero ancho de 150 y luego de 300, con important le digo cual usar, igual no es una buena clase, se es redundante debido a un mal uso de las clases */
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    z-index: 2;
+    opacity: 40%;
+}
+.caja3{
+    position: relative;
+    z-index: 1;
+}
+.ancestro{
+    position: relative;
+}
+/* fin de error404 */
+
+
+nav{
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+   
+}
+nav a:hover {
+    background-color: orangered;
+}
+
+header {
+    /* background-color: darkcyan ; */
+    background: url(/imagenes/maxresdefault.jpg);
+}
+
+footer{
+    background-color: limegreen;
+    padding: 10px;
+    text-align: center;
+    width: 100%;   
+}
+
+/* Estilo del contenedor */
+.contenedor{
+    margin: 25px;
+    text-align: center;
+}
+.contenedor p{
+    text-align: justify;
+}
+
+
+
+/* Listas */
+ul{
+    list-style: inside;
+}
+ol{
+    list-style-position: inside;
+    list-style-type: lower-greek;
+}
+
+/* Tabla */
+ table{
+   width: 100%;
+   border: 1px solid lightslategray
+}
+th{
+    color: orangered;
+    padding: 10px;
+    background-color: greenyellow;
+}
+td{
+    padding:  10px;
+}
+/* Seleccionar filas impares */
+tbody  tr:nth-child(2n+1){
+    background-color: lightgrey;
+}
+/* Seleccionar filas pares */
+tbody  tr:nth-child(2n){
+    background-color: lightslategrey;
+}
+
+
+/* Columnas flexibles */
+.row{
+    display: flex;
+    padding: 15px;
+}
+.row p{
+    margin:10px;
+}
+
+#botones a{
+    padding: 10px;
+    background-color: orchid;
+    border: 0;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+#botones a:hover{
+    background-color: purple;
+}
+
+#whatsapp img{
+   width: 100px;
+   position: fixed;
+   z-index: 9;
+   bottom: 40px;
+   right: 20px;
+   border-radius: 50%;
+}
